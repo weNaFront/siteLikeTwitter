@@ -1,5 +1,18 @@
 body {
     overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #a3adb3d2;
+        border-radius: 30px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #e9edefd3;
+    }
 }
 
 .allBlocks {
@@ -126,7 +139,8 @@ body {
         grid-area: 1/1/2/2;
 
         .back__img {
-            width: 47vw;
+            min-width: 46vw;
+            max-width: 46vw;
             object-fit: cover;
             height: max(30vh, 200px);
             border-radius: 0px 0px 20px 20px;
